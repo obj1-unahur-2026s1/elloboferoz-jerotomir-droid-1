@@ -3,7 +3,7 @@ object feroz {
   var esSaludable = false
   method subirPeso(cantPeso) {peso += cantPeso * 0.1}
   method bajarPeso(cantPeso) {peso -= cantPeso}
-  method saludDelLobo(){
+  method loboEsSaludable(){
     if(peso.between(20, 150))
     {
         esSaludable = true
@@ -11,4 +11,5 @@ object feroz {
     return esSaludable
   }
   method entraEnCrisis(){peso = 10}
+  method correr(){self.bajarPeso(1)}
 }
